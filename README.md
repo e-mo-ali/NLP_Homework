@@ -1,18 +1,18 @@
 # NLP_Homework
 
-## 📌 Arabic Punctuation Restoration using NLP
+## Arabic Punctuation Restoration using NLP
 
 This project implements a simple Natural Language Processing (NLP) approach to **restore punctuation marks in Arabic text**. The script takes unpunctuated Arabic sentences and predicts appropriate punctuation such as commas and periods.
 
 ---
 
-## 🧠 Overview
+## Overview
 
 In many real-world applications (e.g., speech-to-text or informal writing), Arabic text is often written without punctuation. This script aims to improve readability by automatically inserting punctuation marks into such text.
 
 ---
 
-## ⚙️ How the Code Works
+## How the Code Works
 
 ### 1. Input Text
 The script starts with Arabic text that does not contain punctuation.
@@ -40,7 +40,7 @@ After prediction:
 
 ---
 
-## 🔄 Example
+## Example
 
 **Input:**
 كيف حالك اليوم اتمنى ان تكون بخير
