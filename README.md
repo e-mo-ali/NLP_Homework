@@ -1,55 +1,52 @@
 # NLP_Homework
 
-## Arabic Punctuation Processing using NLP
+## 📌 Arabic Punctuation Restoration using NLP
 
-This project contains a Python script that performs basic preprocessing on Arabic text as part of a Natural Language Processing (NLP) task. The script focuses on cleaning text and removing punctuation and non-Arabic content to prepare data for further analysis.
-
----
-
-## Overview
-
-Arabic text often includes noise such as English words, numbers, URLs, and punctuation. This script demonstrates how to clean and normalize such text so it can be used in NLP applications like text classification or machine learning models.
+This project implements a simple Natural Language Processing (NLP) approach to **restore punctuation marks in Arabic text**. The script takes unpunctuated Arabic sentences and predicts appropriate punctuation such as commas and periods.
 
 ---
 
-## How the Code Works
+## 🧠 Overview
 
-### 1. Reading the File
-The script opens and reads a text file containing Arabic content:
-- Loads the file in read mode  
-- Stores all text into a variable  
+In many real-world applications (e.g., speech-to-text or informal writing), Arabic text is often written without punctuation. This script aims to improve readability by automatically inserting punctuation marks into such text.
 
 ---
 
-### 2. Cleaning the Text
-Using regular expressions, the script removes:
-- English letters  
-- Numbers  
-- URLs and hashtags  
-- Special characters  
+## ⚙️ How the Code Works
 
-This ensures that only meaningful Arabic text remains.
+### 1. Input Text
+The script starts with Arabic text that does not contain punctuation.
 
 ---
 
-### 3. Filtering Arabic Characters
-The script relies on the Unicode range for Arabic characters to keep only valid Arabic letters and discard everything else.
+### 2. Text Processing
+The text is processed and prepared for prediction:
+- Splitting text into words  
+- Organizing the sequence for analysis  
 
 ---
 
-### 4. Removing Punctuation
-All punctuation marks are removed to simplify the dataset and make it suitable for NLP tasks.
+### 3. Punctuation Prediction
+The core logic predicts punctuation marks based on the text sequence:
+- Each word is analyzed in context  
+- A punctuation label is assigned (e.g., comma, period, or none)  
 
 ---
 
-### 5. Output
-The cleaned Arabic text is printed, resulting in:
-- Plain Arabic words  
-- No punctuation  
-- No non-Arabic characters  
+### 4. Output Reconstruction
+After prediction:
+- Punctuation marks are inserted into the correct positions  
+- The final sentence becomes more readable and grammatically structured  
 
 ---
 
+## 🔄 Example
+
+**Input:**
+كيف حالك اليوم اتمنى ان تكون بخير
+
+**Output:**
+كيف حالك اليوم؟ أتمنى أن تكون بخير.
 
 
 **CLICK [Notebook](https://colab.research.google.com/drive/1CW8XhlUjwDD4uXP-Q0I_FcU40CDbWXDU?usp=sharing) to check it out**
